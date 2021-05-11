@@ -1,0 +1,12 @@
+@import '../../settings.scss';
+
+.footer {
+  align-items: center;
+  background-color: $main_black;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper {
+  padding-top: 10px;
+}
