@@ -1,0 +1,14 @@
+@import '../../settings.scss';
+
+.container {
+  background-color: $main_black;
+  height: 50px;
+  p {
+    color: #fff;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+  }
+}
