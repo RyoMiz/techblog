@@ -1,0 +1,24 @@
+@import '../settings.scss';
+
+.articles {
+  font-family: $tomorrow;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+//articles && paginationが入る部分
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 40px;
+  padding: 0 35px;
+}
+
+.pagination {
+  background-color: #f00;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  width: 300px;
+}
