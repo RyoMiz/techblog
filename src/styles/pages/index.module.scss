@@ -1,6 +1,10 @@
 @import '../settings.scss';
 
-.articles {
+.main {
+  padding: 0 35px;
+}
+
+.h2 {
   font-family: $tomorrow;
   font-size: 20px;
   margin-bottom: 30px;
@@ -12,7 +16,6 @@
   flex-direction: column;
   gap: 60px;
   margin-bottom: 40px;
-  padding: 0 35px;
 }
 
 .pagination {
@@ -21,4 +24,45 @@
   margin: 0 auto;
   margin-bottom: 80px;
   width: 300px;
+}
+
+@media screen and (min-width: $lg) {
+  .main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .article {
+    width: calc(100% - 260px);
+  }
+  .aside {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 121px;
+    width: 200px;
+  }
+  .h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+  //articles && paginationが入る部分
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .pagination {
+    background-color: #f00;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 300px;
+  }
 }

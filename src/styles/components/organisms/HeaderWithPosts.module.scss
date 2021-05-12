@@ -4,6 +4,7 @@
   margin-bottom: 25px;
 }
 
+// New Postsの文字
 .new_posts {
   font-family: $tomorrow;
   font-size: 20px;
@@ -13,4 +14,20 @@
 
 .slider {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: $lg) {
+  .title {
+    margin-bottom: 80px;
+  }
+  // New Postsの文字
+  .new_posts {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 120px;
+  }
+
+  .slider {
+    margin-bottom: 80px;
+  }
 }

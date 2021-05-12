@@ -1,0 +1,14 @@
+@import '../../settings.scss';
+
+.ul {
+  li {
+    line-height: 1.5;
+  }
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: -2px;
+}

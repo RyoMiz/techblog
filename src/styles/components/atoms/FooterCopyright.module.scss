@@ -10,3 +10,10 @@
   font-size: 15px;
   line-height: 2;
 }
+
+@media screen and (min-width: $lg) {
+  .copyright {
+    font-size: 20px;
+    line-height: 2.5;
+  }
+}
