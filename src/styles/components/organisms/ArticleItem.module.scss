@@ -1,0 +1,70 @@
+@import '../../settings.scss';
+
+.container {
+  background-color: #fff;
+  padding: 10px;
+  padding-left: 40px;
+  padding-bottom: 53px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.category {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+// 記事縦書きで日付を記載している部分
+.time {
+  background-color: $main_black;
+  color: #fff;
+  display: inline-block;
+  font-family: $tomorrow;
+  height: 100%;
+  left: 0;
+  padding-bottom: 10px; //180deg回転しているため、余白上部はpadding-bottomで調整
+  position: absolute;
+  text-align: right;
+  top: 0;
+  transform: rotate(180deg); //180deg回転させる
+  writing-mode: vertical-lr; //縦書きに変更
+  line-height: 30px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: $lg) {
+  .container {
+    padding-left: 60px;
+  }
+  .h3 {
+    font-size: 30px;
+  }
+  .time {
+    line-height: 40px;
+    font-size: 16px;
+  }
+}
