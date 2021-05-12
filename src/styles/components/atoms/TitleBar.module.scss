@@ -1,15 +1,28 @@
 @import '../../settings.scss';
 
 .container {
+  $height: 50px;
   background-color: $main_black;
-  height: 50px;
+  height: $height;
   h1,
   p {
     color: #fff;
-
+    font-family: $tomorrow;
     font-size: 25px;
     font-weight: 700;
-    line-height: 2;
+    line-height: $height;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .container {
+    $height: 80px;
+    height: $height;
+    h1,
+    p {
+      font-size: 50px;
+      line-height: $height;
+    }
   }
 }

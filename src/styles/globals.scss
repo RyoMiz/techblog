@@ -5,8 +5,14 @@ body {
   background-color: #e5e5e5;
   font-family: 'Roboto', sans-serif;
 }
-
+//
 // Vendor
+//
+
+//
+// swiper
+//
+
 //New Posts部分のSwiper関連
 .swiper_newposts {
   padding: 0 35px;
@@ -14,7 +20,6 @@ body {
 
   .next_button,
   .prev_button {
-    background-color: $main_black;
     background-image: url(../../public/image/arrow_left.svg);
     background-size: cover;
     border-radius: 50%;
@@ -23,6 +28,7 @@ body {
     top: 50%;
     transform: translate(0, -50%);
     width: 25px;
+    z-index: 10;
   }
   .next_button {
     right: 5px;
@@ -34,6 +40,25 @@ body {
   //Paginationの色変更
   .swiper-pagination-bullet-active {
     background-color: $main_black;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .swiper_newposts {
+    padding: 0 35px;
+    position: relative;
+
+    .next_button,
+    .prev_button {
+      height: 40px;
+      width: 40px;
+    }
+    .next_button {
+      right: calc(33% - 20px);
+    }
+    .prev_button {
+      left: calc(33% - 20px);
+    }
   }
 }
 
@@ -87,13 +112,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background: $main_black;
   font-size: 1.15em;
-  padding: 2.5em 1.5em 0;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
   color: #fff;
-  padding: 0.8em;
 }
 
 /* Individual item */
